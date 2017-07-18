@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Cart - Bones of Scent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="css/theme.css"/>
+    <link type="text/css" rel="stylesheet" href="css/cartpay.css"/>
+
+    <link rel="icon" type="image/gif" href="image/b_logo_black1.png"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-compat-git.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Parisienne|Cormorant+Garamond" rel="stylesheet">
+    <!--<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>-->
+
+
+</head>
+
+<body style="background-color: rgb(238, 238, 238);" onload="calculatePrice()">
+
+<header>
+    <div class="intro">
+
+        <!--<img id="round-b-logo" align="center"  src="image/dots_smallB_white.png" alt="0logo"/>-->
+    </div>
+    <div class="menu">
+        <div class="logo" id="top" align="center">
+            <img id="round-b-logo" align="center" src="image/dots_smallB_white.png" alt="0logo"/>
+            <img id="bos-big-logo" src="image/bos_logo_white1.png" alt="BoSwhite"/>
+        </div>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="productall.html">SHOP</a></li>
+            <li><a href="cart.html">CART</a></li>
+            <!--<li><a href="">Contact</a></li>-->
+        </ul>
+    </div>
+    <br>
+
+</header>
+
+<div class="content" align="center">
+    <div class="center" align="center">
+
+        <!--<div class="confirmation">-->
+        <!--<p align="left">-->
+        <!--Dear customer, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ab, ipsa explicabo tempore, ea vero-->
+        <!--quae sequi dignissimos adipisci, sapiente eos at distinctio, architecto nemo quam. Nulla dolorem cumque-->
+        <!--architecto magni praesentium unde sequi omnis, nisi ducimus illo eligendi saepe harum numquam aut vel-->
+        <!--laudantium, reiciendis necessitatibus ipsum fuga non.-->
+        <!--</p>-->
+
+        <div class="cartall" align="center">
+
+            <p align="left">
+                We are proud to offer beautiful hand-arranged bouquets and fast, reliable delivery by one of our local
+                florists located across the US. Every order is sent to a local florist as we believe that supporting our
+                local businesses strengthens our communities. Our fresh flowers are delivered in a vase, ready to be enjoyed immediately, and we never pack the arrangement in a box to be shipped across the country. That's the Bones of Scent's difference!
+
+            </p>
+
+            <div class="cartone">
+                <div class="cartimg">
+                    <a href="product1.html">
+                    <img src="image/prdct21.png" alt="product1">
+                    </a>
+                </div>
+
+                <div class="cartdiscp">
+                    <a href="product1.html">
+                        <h3>WHITE KNIGHT</h3>
+                        <h4 id="whiteKnightPrice">$12.00/ea</h4>
+                    </a>
+                </div>
+
+                <div class="cartnumberadd" align="center">
+                    <label>
+                        <select class="cart_items" each_price=12 onChange="calculatePrice()">
+                            <option value=0>0</option>
+                            <option selected="selected" value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+                            <option value=6>6</option>
+                            <option value=7>7</option>
+                            <option value=8>8</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="cartprice" id="price0" align="center">
+                    $12.00
+                </div>
+            </div>
+
+
+            <div class="cartone">
+                <div class="cartimg">
+                    <img src="image/prdct12.png" alt="product1">
+                </div>
+                <div class="cartdiscp">
+                    <h3>DRAGONFLY</h3>
+                    <h4 id="dragonflyPrice" price="22">$22.00/ea</h4>
+                </div>
+                <div class="cartnumberadd" align="center">
+                    <label>
+                        <select class="cart_items" each_price=22 onChange="calculatePrice()">
+                            <option value=0>0</option>
+                            <option selected="selected" value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+                            <option value=6>6</option>
+                            <option value=7>7</option>
+                            <option value=8>8</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="cartprice" id="price1" align="center">
+                    $22.00
+                </div>
+            </div>
+
+
+            <div class="cartone">
+                <div class="cartimg">
+                    <img src="image/prdct5.png" alt="product1">
+                </div>
+                <div class="cartdiscp">
+                    <h3>BUZZWORTHY </h3>
+                    <h4 id="buzzworthyPrice" price="26.00">$26/ea</h4>
+                </div>
+                <div class="cartnumberadd" align="center">
+                    <label>
+                        <select class="cart_items" each_price=26 onChange="calculatePrice()">
+                            <option value=0>0</option>
+                            <option selected="selected" value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+                            <option value=6>6</option>
+                            <option value=7>7</option>
+                            <option value=8>8</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="cartprice" id="price2" align="center">
+                    $26.00
+                </div>
+            </div>
+
+
+
+
+            <div class="cartone">
+                <div class="cartimg">
+                    <img src="image/upslogo1.png" alt="product1">
+                </div>
+                <div class="cartdiscp">
+                    Free Delivery $0.00
+
+                </div>
+                <div class="cartnumberadd" align="center">
+                    <label>
+                        <select class="cart_items" each_price=0 onChange="calculatePrice()">
+                            <option value=0>0</option>
+                            <option selected="selected" value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+                            <option value=6>6</option>
+                            <option value=7>7</option>
+                            <option value=8>8</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="cartprice" id="price3" align="center">
+                    $0.00
+                </div>
+            </div>
+
+            <br>
+            <hr>
+            <br>
+
+            <div class="totalprice" align="right">
+                <h2 class="totalPrice">SUBTOTAL: $<span id="total_price">0.00</span></h2>
+                <h5>Sales tax, if any, is determined at checkout.</h5>
+
+                <button class="check">
+                    PROCEED TO CHECKOUT
+                </button>
+            </div>
+
+            <!--<script>-->
+                <!--function calculatePrice() {-->
+                    <!--var total_price = 0;-->
+                    <!--var all_item_selects = document.getElementsByClassName("cart_items");-->
+                    <!--for (var i = 0; i < all_item_selects.length; i++) {-->
+                        <!--var each_select = all_item_selects[i]; // Element-->
+                        <!--var each_price = each_select.getAttribute("each_price"); // int-->
+                        <!--var item_num = each_select.value; // int-->
+                        <!--var current_item_price = each_price * item_num;-->
+                        <!--document.getElementById("price" + parseInt(i)).innerHTML =-->
+                            <!--"$" + parseInt(current_item_price) + ".00";-->
+                        <!--total_price += current_item_price;-->
+                    <!--}-->
+                    <!--document.getElementById("total_price").innerHTML = parseInt(total_price) + ".00";-->
+                <!--}-->
+
+            <!--</script>-->
+
+
+        </div>
+
+
+        <br><br>
+        <hr>
+
+        <div class="footer-big" align="center">
+            <div class="four-one" align="left">
+                <ul>
+                    <li class="textbold">ABOUT</li>
+                    <li>Press</li>
+                    <li>Gallery/Video</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="four-one" align="left">
+                <ul>
+                    <li class="textbold">SERVICE</li>
+                    <li>Events</li>
+                    <li>Weddings</li>
+                    <li>Corporate Gifts</li>
+                    <li>Gift Cards</li>
+                </ul>
+            </div>
+            <div class="four-one" align="left">
+                <ul>
+                    <li class="textbold">WORK WITH US</li>
+                    <li>Jobs</li>
+                    <li>Florists</li>
+                    <li>Affiliates</li>
+                    <li>Site Map</li>
+                </ul>
+            </div>
+            <div class="four-one" align="left">
+                <ul>
+                    <li class="textbold">HELP</li>
+                    <li>Customer Service</li>
+                    <li>Flower Care</li>
+                    <li>FAQs</li>
+                    <li>Privacy and Legal Terms</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-small" align="center">
+            <img src="image/small-facebook-icon1.png" alt="facebook">
+            <img src="image/small-twitter-icon1.png" alt="twitter">
+            <img src="image/small-pinterest-icon1.png" alt="pinterest">
+            <img src="image/small-instagram-icon1.png" alt="instgrm">
+            <p>COPYRIGHT 2017, Mengru Zhang<br><br><br><br></p>
+        </div>
+
+
+        <!--</div>-->
+    </div>
+
+</div>
+
+<script type="text/javascript" src="js/nav.js"></script>
+<script type="text/javascript" src="js/addcart.js"></script>
+
+</body>
+</html>
